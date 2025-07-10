@@ -1,0 +1,23 @@
+# Core Dependencies
+torch==2.1.0
+transformers==4.36.0
+datasets==2.16.0
+evaluate==0.4.1
+accelerate==0.25.0
+
+# Data Processing
+pandas==2.1.4
+numpy==1.24.3
+scikit-learn==1.3.2
+
+# Visualization
+matplotlib==3.8.0
+seaborn==0.13.0
+plotly==5.18.0
+
+# NLP Utilities
+sentencepiece==0.1.99
+protobuf==3.20.3
+
+# Additional
+tqdm==4.66.1

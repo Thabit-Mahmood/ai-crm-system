@@ -1,0 +1,16 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Copy requirements and install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir --timeout=1000 --retries=3 -r requirements.txt
+
+# Copy application code
+COPY . .
+
+# Expose port
+EXPOSE 3004
+
+# Run the application
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3004"]
